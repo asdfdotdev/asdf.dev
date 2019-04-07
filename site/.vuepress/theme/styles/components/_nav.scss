@@ -1,0 +1,41 @@
+nav {
+  @include padding(4x 12x);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  svg {
+    width: _(12x);
+    height: auto;
+  }
+
+  a {
+    @include color(black);
+    @extend %NavHover;
+
+    &.Logo {
+      &:after {
+        display: none;
+      }
+    }
+
+  }
+
+}
+
+@include media('<small') {
+
+  nav {
+    @include padding(4x 3x);
+  }
+
+}
+
+@include media('<x-small') {
+
+  nav {
+    @include padding(4x 0);
+  }
+
+}

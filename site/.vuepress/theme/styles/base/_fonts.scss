@@ -1,0 +1,22 @@
+$_fonts: (
+    ('asdf-dot-dev',        'light',           100, normal),
+    ('asdf-dot-dev',        'regular',         400, normal),
+    ('asdf-dot-dev',        'regular-italic',  400, italic),
+    ('asdf-dot-dev-book',   'book',            400, normal),
+    ('asdf-dot-dev-medium', 'medium',          700, normal),
+    ('asdf-dot-dev',        'bold',            700, normal),
+);
+
+@each $_family, $_name, $_weight, $_style in $_fonts {
+  @font-face {
+    font-family: $_family;
+    src: url('/assets/fonts/#{$_name}/asdf-#{$_name}.eot');
+    src: url('/assets/fonts/#{$_name}/asdf-#{$_name}.eot?#iefix') format('embedded-opentype'),
+      url('/assets/fonts/#{$_name}/asdf-#{$_name}.woff2') format('woff2'),
+      url('/assets/fonts/#{$_name}/asdf-#{$_name}.woff') format('woff'),
+      url('/assets/fonts/#{$_name}/asdf-#{$_name}.ttf') format('truetype'),
+      url('/assets/fonts/#{$_name}/asdf-#{$_name}.svg#geomanistitalic') format('svg');
+    font-weight: $_weight;
+    font-style: $_style;
+  }
+}

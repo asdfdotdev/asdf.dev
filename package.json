@@ -1,0 +1,29 @@
+{
+  "name": "asdf.dev",
+  "version": "1.0.0",
+  "description": "A personal website.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "./node_modules/.bin/vuepress dev site",
+    "build": "./node_modules/.bin/vuepress build site",
+    "release": "./node_modules/.bin/vuepress build site && cp -R _build/ _release/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdfdotdev/dev.asdf.git"
+  },
+  "author": "Chris Carlevato",
+  "license": "GPL-2.0-only",
+  "bugs": {
+    "url": "https://github.com/asdfdotdev/dev.asdf/issues"
+  },
+  "homepage": "https://github.com/asdfdotdev/dev.asdf#readme",
+  "dependencies": {
+    "@flickerbox/fabric": "^4.0.25",
+    "node-sass": "^4.11.0",
+    "sass-loader": "^7.1.0",
+    "vue-clickaway": "^2.2.2",
+    "vuepress": "^1.0.0-alpha.44"
+  }
+}

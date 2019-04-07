@@ -1,0 +1,30 @@
+<IfModule mod_headers.c>
+    Header set Referrer-Policy no-referrer-when-downgrade
+    Header set X-Frame-Options DENY
+    Header always set X-XSS-Protection "1; mode=block"
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    RewriteCond %{HTTP_HOST} ^(www\.)(.+) [OR]
+    RewriteCond %{HTTPS} off
+    RewriteCond %{HTTP_HOST} ^(www\.)?(.+)
+    RewriteRule ^ https://%2%{REQUEST_URI} [R=301,L]
+
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule .* 404.html [L]
+</IfModule>
+
+<IfModule mod_deflate.c>
+    <filesMatch "\.(txt|xml|rss|js|css|html|php|jpg|jpeg)$">
+        SetOutputFilter DEFLATE
+    </filesMatch>
+</IfModule>
+
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+    Header set Cache-Control "max-age=604800, public"
+</filesMatch>

@@ -1,0 +1,73 @@
+article.about {
+
+  .Hero {
+    &:after {
+      background-color: get-color(green);
+    }
+
+    &:before {
+      background-color: get-color(gold);
+    }
+
+    .Hero-title {
+      @include color(gold);
+    }
+  }
+
+  .OverUnder {
+
+    &-divide {
+      background-color: get-color(gold);
+
+      div {
+        background-color: get-color(green);
+
+        &:before {
+          background-color: get-color(green);
+        }
+
+      }
+
+    }
+
+  }
+
+  .FiftyFifty {
+
+    [class^='is-'],
+    [class*=' is-'] {
+      display: flex;
+      justify-content: space-evenly;
+
+      &:first-child {
+        @include color(white);
+      }
+
+      &:last-child {
+        @include color(purple);
+      }
+    }
+
+    &:before {
+      background-color: get-color(purple);
+    }
+
+    a {
+      @include transition(color normal ease);
+      color: inherit;
+
+      &:after {
+        display: none;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        @include color(light-gray);
+      }
+
+    }
+
+  }
+
+}

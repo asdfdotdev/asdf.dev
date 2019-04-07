@@ -1,0 +1,41 @@
+.copyable {
+  @include transition(all normal ease);
+  cursor: pointer;
+  position: relative;
+
+  &:after {
+    @include transition(opacity normal ease);
+    @include color(gray);
+    @include font-size(small);
+    content: 'copied to clipboard';
+    height: 0;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    text-align: right;
+    white-space: nowrap;
+    justify-content: flex-end;
+    opacity: 0;
+  }
+
+  &.copied {
+    font-size: 110%;
+
+    &:after {
+      opacity: 1;
+      height: auto;
+    }
+
+  }
+
+}
+
+@include media('<x-small') {
+
+  .copyable {
+    &:after {
+      justify-content: center;
+    }
+  }
+
+}

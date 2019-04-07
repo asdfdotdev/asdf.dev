@@ -1,0 +1,160 @@
+article.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  header,
+  header .Wrap {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-self: stretch;
+  }
+
+  header {
+
+    .Wrap {
+      justify-content: center;
+    }
+
+    nav {
+      width: 100%;
+      padding: 0;
+      justify-content: center;
+      flex-direction: row;
+
+      .Logo {
+        position: relative;
+        background-color: get-color(white);
+        width: auto;
+        z-index: 5;
+        opacity: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        svg {
+          backface-visibility: visible !important;
+          animation-name: entrance;
+          width: _(65x);
+          max-width: 100%;
+        }
+      }
+
+      a {
+        @include transition(all slow ease);
+        @include font-size(h6);
+        opacity: 0.1;
+
+        &:first-child {
+          transform: translate(_(12x));
+        }
+
+        &:last-child {
+          transform: translate(_(-12x));
+        }
+
+      }
+
+      &:hover {
+
+        a {
+          opacity: 1;
+
+          &:first-child {
+            transform: translate(_(-12x), 0);
+          }
+
+          &:last-child {
+            transform: translate(_(12x), 0);
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  .fa-arrow-up {
+    @include color(red);
+    position: absolute;
+    bottom: _(-8x);
+    animation: bounce 2s infinite;
+    display: none;
+  }
+
+  &.hesitation {
+    .fa-arrow-up {
+      display: block;
+    }
+  }
+
+}
+
+@include media('<medium') {
+
+  article.home {
+
+    header {
+
+      nav {
+        .Logo {
+          svg {
+            width: _(35x);
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@include media('<small') {
+
+  article.home {
+
+    header {
+
+      nav {
+        flex-direction: column;
+
+        a {
+
+          &:first-child {
+            transform: translate(0, _(6x));
+          }
+
+          &:last-child {
+            transform: translate(0, _(-6x));
+          }
+
+        }
+
+        &:hover {
+
+          a {
+
+            &:first-child {
+              transform: translate(0, _(-6x));
+            }
+
+            &:last-child {
+              transform: translate(0, _(6x));
+            }
+
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+}

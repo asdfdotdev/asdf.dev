@@ -1,0 +1,99 @@
+.Hero {
+  height: 70vh;
+  min-height: _(60x);
+  position: relative;
+
+  &::before,
+  &::after {
+    @include transition(all normal ease);
+    content: '';
+    display: block;
+    position: absolute;
+  }
+
+  &:after {
+    width: 66%;
+    height: 75%;
+    left: 0;
+    top: 0;
+  }
+
+  &:before {
+    width: 60%;
+    height: 66.6666667%;
+    right: 0;
+    bottom: 0;
+  }
+
+  &-title {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    z-index: 10;
+  }
+
+  &.is-RightToLeft {
+
+    &:after {
+      left: auto;
+      right: 0;
+    }
+
+    &:before {
+      left: 0;
+      right: auto;
+    }
+
+  }
+
+}
+
+@include media('<medium') {
+
+  .Hero {
+
+    &:after {
+      width: 70%;
+    }
+
+    &:before {
+      width: 65%;
+    }
+
+  }
+
+}
+
+@include media('<small') {
+
+  .Hero {
+    max-height: _(60x);
+
+    &:after {
+      width: 78%;
+    }
+
+    &:before {
+      width: 70%;
+    }
+
+  }
+
+}
+
+@include media('<x-small') {
+
+  .Hero {
+
+    &:after {
+      width: 85%;
+    }
+
+    &:before {
+      width: 80%;
+    }
+
+  }
+
+}

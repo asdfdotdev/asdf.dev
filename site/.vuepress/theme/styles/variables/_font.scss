@@ -1,0 +1,54 @@
+//----------------------------------------------------------------------
+//
+// Fonts
+//
+//----------------------------------------------------------------------
+
+$font-family:             "asdf-dot-dev", "Helvetica Neue", Helvetica, sans-serif;
+$font-family--medium:     "asdf-dot-dev-medium", "Helvetica Neue", Helvetica, sans-serif;
+$font-family--book:       "asdf-dot-dev-book", "Helvetica Neue", Helvetica, sans-serif;
+$font-family--monospace:  monospace;
+
+$font-size: (
+	'base': ('large': 20px, 'small': 18px),
+	'h6':   ('large': 24px, 'small': 20px),
+	'h5':   ('large': 36px, 'small': 24px),
+	'h4':   ('large': 48px, 'small': 36px),
+	'h3':   ('large': 60px, 'small': 42px),
+	'h2':   ('large': 72px, 'small': 48px),
+	'h1':   ('large': 84px, 'small': 72px),
+
+  'small': 16px
+);
+
+$font-weight: (
+	'base': 400,
+	'h6':   100,
+	'h5':   400,
+	'h4':   400,
+	'h3':   400,
+	'h2':   700,
+	'h1':   700,
+
+  'thin': 100
+);
+
+$letter-spacing: (
+	'base': 0,
+	'h6':   0,
+	'h5':   0,
+	'h4':   0,
+	'h3':   0,
+	'h2':   0,
+	'h1':   0
+);
+
+$line-height: (
+  'base': ('large': 24px, 'small': 20px),
+  'h6':   ('large': 24px, 'small': 20px),
+  'h5':   ('large': 36px, 'small': 24px),
+  'h4':   ('large': 48px, 'small': 36px),
+  'h3':   ('large': 60px, 'small': 48px),
+  'h2':   ('large': 72px, 'small': 60px),
+  'h1':   ('large': 84px, 'small': 72px)
+);

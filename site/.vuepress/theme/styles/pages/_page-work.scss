@@ -1,0 +1,83 @@
+article.work {
+
+  .Hero {
+    &:after {
+      background-color: get-color(purple);
+    }
+
+    &:before {
+      background-color: get-color(cyan);
+    }
+
+    .Hero-title {
+      @include color(cyan);
+    }
+  }
+
+  .OverUnder {
+
+    &-divide {
+      @include margin(8x auto);
+      background-color: get-color(cyan);
+
+      div {
+        background-color: get-color(purple);
+
+        &:before {
+          background-color: get-color(purple);
+        }
+
+      }
+
+    }
+
+  }
+
+  .FiftyFifty {
+
+    [class^='is-'],
+    [class*=' is-'] {
+      &:first-child {
+        @include color(white);
+      }
+
+      &:last-child {
+        @include color(green);
+      }
+    }
+
+    &:before {
+      background-color: get-color(green);
+    }
+
+  }
+
+}
+
+@include media('<small') {
+
+  article.work {
+
+    .OverUnder {
+
+      &-divide {
+        @include margin(3x auto);
+      }
+
+    }
+
+    .FiftyFifty {
+
+      a {
+        @include color(white);
+
+        &:after {
+          background-color: get-color(white);
+        }
+      }
+
+    }
+
+  }
+
+}

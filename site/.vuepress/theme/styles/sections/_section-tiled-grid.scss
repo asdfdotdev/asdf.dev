@@ -1,0 +1,46 @@
+.TiledGrid {
+
+  &-tile {
+    display: flex;
+    flex-direction: column;
+
+    h6 {
+      @include margin(3x 0 1x);
+    }
+
+    p {
+      @include color(gray);
+      @include font-weight(thin);
+      margin-top: _(1x);
+    }
+
+  }
+
+  &-logo {
+    position: relative;
+    background-color: get-color(purple);
+    width: 100%;
+
+    &:after {
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    img {
+      display: block;
+      margin: auto;
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: auto;
+      height: auto;
+      max-width: _(23x);
+      max-height: _(9x);
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+  }
+
+}

@@ -1,0 +1,6 @@
+**/.DS_Store
+.idea
+_build/
+_release/
+node_modules/
+**/fonts/

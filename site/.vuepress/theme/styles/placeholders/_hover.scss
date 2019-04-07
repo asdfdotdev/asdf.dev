@@ -1,0 +1,32 @@
+%LinkHover {
+  @include color(black);
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    @include transition(width normal ease);
+    content: '';
+    position: absolute;
+    width: 0;
+    height: _(0.25x);
+    display: block;
+    margin-top: 0;
+    right: 0;
+    background-color: get-color(accent);
+  }
+
+  &:hover {
+    @include color(accent);
+    text-decoration: none;
+
+    &:after{
+      width: 100%;
+      left: 0;
+    }
+  }
+
+  &:active,
+  &:focus {
+    text-decoration: none;
+  }
+}

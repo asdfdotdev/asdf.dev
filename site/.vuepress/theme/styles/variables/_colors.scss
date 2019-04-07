@@ -1,0 +1,28 @@
+//----------------------------------------------------------------------
+//
+// colors
+//
+//----------------------------------------------------------------------
+
+$colors-use-variables: false;
+
+$colors: (
+
+	'default':      #232323,
+	'accent':       #ff0000,
+
+	'black':        #111111,
+	'dark-gray':    #444444,
+	'gray':         #777777,
+	'light-gray':   #aaaaaa,
+	'lighter-gray': #dedede,
+	'white':        #ffffff,
+
+  'purple':       #1f0149,
+  'blue':         #0f00b5,
+  'green':        #028804,
+  'cyan':         #15fefb,
+  'gold':         #ffd700,
+  'red':          #ff0000,
+
+);

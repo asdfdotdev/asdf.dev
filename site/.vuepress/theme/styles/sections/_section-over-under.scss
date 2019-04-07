@@ -1,0 +1,81 @@
+.OverUnder {
+
+  &-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &-divide {
+    height: _(1x);
+    position: relative;
+    margin-top: _(1x);
+    margin-bottom: _(1x);
+
+    div {
+      height: _(1x);
+      position: absolute;
+      width: 50%;
+
+      &:before {
+        content: '';
+        display: block;
+        width: _(1x);
+        height: _(2x);
+        position: absolute;
+        transform: rotate(45deg);
+        z-index: -1;
+      }
+
+      &:first-child {
+        top: _(-1x);
+        right: 0;
+
+        &:before {
+          top: 1px;
+          left: _(-0.875x);
+          right: auto;
+        }
+      }
+
+      &:last-child {
+        bottom: _(-1x);
+        left: 0;
+
+        &:before {
+          bottom: 1px;
+          left: auto;
+          right: _(-0.875x);
+        }
+      }
+
+    }
+
+  }
+
+  img {
+    @include margin(0 auto);
+    display: block;
+    height: _(37x);
+    width: auto;
+    max-width: 100%;
+  }
+
+}
+
+@include media('<small') {
+
+  .OverUnder {
+
+    &-divide {
+
+      div {
+        width: calc(100% - #{_(2x)});
+      }
+
+    }
+
+  }
+
+}

@@ -1,0 +1,27 @@
+%NavHover {
+  @include color(black);
+  position: relative;
+  text-decoration: none;
+
+  &:after {
+    @include transition(width normal ease);
+    content: '';
+    position: absolute;
+    width: 0;
+    height: _(0.25x);
+    display: block;
+    margin-top: _(0.5x);
+    right: 0;
+    background-color: get-color(accent);
+  }
+
+  &:hover {
+    @include color(accent);
+    text-decoration: none;
+
+    &:after{
+      width: 100%;
+      left: 0;
+    }
+  }
+}

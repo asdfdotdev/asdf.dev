@@ -1,0 +1,40 @@
+.Logo {
+  .cursor {
+    @include transition(all normal ease);
+    fill: get-color(gray);
+  }
+
+  &:hover {
+    .cursor {
+      fill: get-color(red);
+    }
+  }
+}
+
+.work {
+  .Logo {
+    .cursor {
+      fill: get-color(cyan);
+    }
+
+    &:hover {
+      .cursor {
+        fill: get-color(purple);
+      }
+    }
+  }
+}
+
+.about {
+  .Logo {
+    .cursor {
+      fill: get-color(gold);
+    }
+
+    &:hover {
+      .cursor {
+        fill: get-color(green);
+      }
+    }
+  }
+}
