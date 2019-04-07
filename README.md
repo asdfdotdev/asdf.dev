@@ -18,7 +18,7 @@ VuePress theme styles/components are located in `/site/.vuepress/theme`.
 
 #### Our Font
 
-[On the live site](https://asdf.dev) we are using the wonderful Geomanist font from our friends at [Atipo Foundry](http://www.atipofoundry.com/fonts/geomanist). You won't it in this repo because we've only licensed it for our own use. But if you're in the market for some outstanding fonts pay them a visit.
+[On the live site](https://asdf.dev) we are using the wonderful Geomanist font from our friends at [Atipo Foundry](http://www.atipofoundry.com/fonts/geomanist). You won't find it in this repo because we've only licensed it for our own use. But if you're in the market for some outstanding fonts pay them a visit.
 
 ### Build it
 
