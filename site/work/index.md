@@ -53,21 +53,24 @@ fifty_fifty:
 tiled_grid:
   title: The Nine to Five
   tiles:
+    - name: Airship
+      description: WordPress, Pantheon, Marketo, ExpressionEngine Conversion
+      image: /assets/images/logos/airship.png
     - name: Stitch Fix
       description: WordPress, Pantheon, Google Analytics
       image: /assets/images/logos/stitchfix.png
-    - name: Agari Data
-      description: WordPress, WP Engine, AWS, Postgres, Marketo, Google Analytics
-      image: /assets/images/logos/agari.png
     - name: Okta
       description: Drupal, Aquia, AWS, Salesforce, Discourse, VuePress 
       image: /assets/images/logos/okta.png
-    - name: Ayasdi
-      description: WordPress, Pantheon 
-      image: /assets/images/logos/ayasdi.png
+    - name: Agari Data
+      description: WordPress, WP Engine, AWS, Postgres, Marketo, Google Analytics
+      image: /assets/images/logos/agari.png
     - name: Lakeside Software
       description: Drupal, Pantheon, Act-On, Google Analytics
       image: /assets/images/logos/lakesidesoftware.png
+    - name: Ayasdi
+      description: WordPress, Pantheon 
+      image: /assets/images/logos/ayasdi.png
     - name: Helpshift
       description: WordPress, Pantheon, HubSpot
       image: /assets/images/logos/helpshift.png
