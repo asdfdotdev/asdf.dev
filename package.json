@@ -24,6 +24,6 @@
     "node-sass": "^4.11.0",
     "sass-loader": "^7.1.0",
     "vue-clickaway": "^2.2.2",
-    "vuepress": "^1.0.0-alpha.44"
+    "vuepress": "^1.0.0-alpha.47"
   }
 }

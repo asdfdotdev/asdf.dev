@@ -62,12 +62,15 @@ tiled_grid:
     - name: Okta
       description: Drupal, Aquia, AWS, Salesforce, Discourse, VuePress 
       image: /assets/images/logos/okta.png
-    - name: Agari Data
-      description: WordPress, WP Engine, AWS, Postgres, Marketo, Google Analytics
-      image: /assets/images/logos/agari.png
+    - name: Blue Hexagon
+      description: WordPress, Pantheon
+      image: /assets/images/logos/bluehexagon.png
     - name: Lakeside Software
       description: Drupal, Pantheon, Act-On, Google Analytics
       image: /assets/images/logos/lakesidesoftware.png
+    - name: Agari Data
+      description: WordPress, WP Engine, AWS, Postgres, Marketo, Google Analytics
+      image: /assets/images/logos/agari.png
     - name: Ayasdi
       description: WordPress, Pantheon 
       image: /assets/images/logos/ayasdi.png
