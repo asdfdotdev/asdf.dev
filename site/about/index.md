@@ -30,7 +30,7 @@ over_under:
 
 fifty_fifty:
   left:
-    title: Let's
+    title: Let’s
     contents: |
       <a href="https://github.com/chrislarrycarl" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-github"></i></a>
       <a href="https://www.linkedin.com/in/chriscarlevato" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-linkedin"></i></a>
@@ -39,5 +39,16 @@ fifty_fifty:
     contents: |
       <a href="https://profiles.wordpress.org/chrislarrycarl/" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-wordpress"></i></a>
       <a href="https://www.drupal.org/u/chrislarrycarl" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-drupal"></i></a>
+
+featured_image:
+  title: Such A Character
+  align: right
+  image:
+    path: /assets/images/low-line-unicode-sponsor-asdf.png
+    alt: asdf.dev is an official bronze level sponsor of the unicode low line character
+  text: |
+      Low Line, Underscore, &amp;#95;, U+005F, and more.
+      Referred to by many names this humble, yet versatile, character is a vital member of many languages and friend to both linguist and programmer alike.
+      It’s also a core brand element of asdf.dev which is why I’m proud to be an official bronze level sponsor, helping to <a href="https://www.unicode.org/consortium/adopted-characters.html#b005F" target="_blank" rel="noopener noreferrer">support the Unicode Consortium</a> in their mission to standardize text in software.
 
 ---

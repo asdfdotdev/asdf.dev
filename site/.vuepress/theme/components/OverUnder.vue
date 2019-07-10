@@ -18,7 +18,7 @@
             v-if="over.text">
 
             <p
-              v-for="(line, index) in formattedText(over.text)"
+              v-for="(line, index) in asdf__formattedText(over.text)"
               :key="index"
               v-html="line"/>
 
@@ -66,7 +66,7 @@
             v-if="under.text">
 
             <p
-              v-for="(line, index) in formattedText(under.text)"
+              v-for="(line, index) in asdf__formattedText(under.text)"
               :key="index"
               v-html="line"/>
 
@@ -86,9 +86,15 @@
 
 <script>
 
+  import FormattedText from "../mixins/FormatText"
+
   export default {
 
     name: 'OverUnder',
+
+    mixins: [
+      FormattedText,
+    ],
 
     props: {
 
@@ -106,14 +112,6 @@
         default: () => {},
         type: Object,
       },
-
-    },
-
-    methods: {
-
-      formattedText: function(text) {
-        return text.match(/[^\r\n]+/g)
-      }
 
     },
 

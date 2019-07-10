@@ -1,0 +1,35 @@
+.FeaturedImage {
+  @include padding(10x 0);
+  background-color: get-color(lighter-gray, 0.25);
+
+  &-image {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    order: 1;
+
+    img {
+      @include margin(auto);
+      width: _(35x);
+      max-width: 90%;
+    }
+
+  }
+
+  &-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex: 1;
+  }
+
+  &.is-AlignRight {
+
+    .FeaturedImage-image {
+      order: 2;
+    }
+
+  }
+
+}

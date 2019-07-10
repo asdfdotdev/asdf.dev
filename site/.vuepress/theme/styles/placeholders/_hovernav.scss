@@ -10,9 +10,9 @@
     width: 0;
     height: _(0.25x);
     display: block;
-    margin-top: _(0.5x);
     right: 0;
     background-color: get-color(accent);
+    bottom: _(-1x);
   }
 
   &:hover {

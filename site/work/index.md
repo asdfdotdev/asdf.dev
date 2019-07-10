@@ -14,7 +14,7 @@ over_under:
   title: Moonlighting
   over:
     text: |
-      No marketer deserves to create their marketing links using cryptic or fragile formulas. That's why I created utm.codes, a WordPress plugin that provides a better way to create and manage campaign links. 
+      No marketer deserves to create their marketing links using cryptic or fragile formulas. That’s why I created utm.codes, a WordPress plugin that provides a better way to create and manage campaign links. 
       By leveraging popular tools for ci/cd, code coverage, coding standards compliance, and code sharing, utm.codes strives to be equally friendly for marketers and developers.
       <a href="https://utm.codes" target="_blank" rel="noopener noreferrer">Visit utm.codes to learn more.</a>
     image:

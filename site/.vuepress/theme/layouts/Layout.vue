@@ -1,7 +1,6 @@
 <template>
 
-  <article
-    :class="[pathToClass]">
+  <article :class="[pathToClass]">
 
     <Header/>
 
@@ -17,6 +16,13 @@
       :title="$page.frontmatter.over_under.title"
       :over="$page.frontmatter.over_under.over"
       :under="$page.frontmatter.over_under.under"/>
+
+    <FeaturedImage
+      v-if="$page.frontmatter.featured_image"
+      :title="$page.frontmatter.featured_image.title"
+      :align="$page.frontmatter.featured_image.align"
+      :image="$page.frontmatter.featured_image.image"
+      :text="$page.frontmatter.featured_image.text"/>
 
     <FiftyFifty
       v-if="$page.frontmatter.fifty_fifty"
@@ -40,20 +46,22 @@
 
 <script>
 
-  import Hero from "../components/hero";
-  import OverUnder from "../components/OverUnder";
-  import FiftyFifty from "../components/FiftyFifty";
-  import TiledGrid from "../components/TiledGrid";
+  import Hero from "../components/hero"
+  import OverUnder from "../components/OverUnder"
+  import FeaturedImage from "../components/FeaturedImage"
+  import FiftyFifty from "../components/FiftyFifty"
+  import TiledGrid from "../components/TiledGrid"
 
   export default {
 
     name: 'Layout',
 
     components: {
-      TiledGrid,
-      FiftyFifty,
       Hero,
       OverUnder,
+      FeaturedImage,
+      FiftyFifty,
+      TiledGrid,
     },
 
     computed: {
