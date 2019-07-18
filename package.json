@@ -14,7 +14,7 @@
     "url": "git+https://github.com/asdfdotdev/dev.asdf.git"
   },
   "author": "Chris Carlevato",
-  "license": "GPL-2.0-only",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/asdfdotdev/dev.asdf/issues"
   },
