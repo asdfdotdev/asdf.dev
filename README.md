@@ -4,7 +4,7 @@ asdf.dev - A website.
 
 [![VuePress Compatibility](https://img.shields.io/badge/VuePress-v1.x-success.svg)](https://v1.vuepress.vuejs.org)
 
-asdf.dev is powered by VuePress 1.0.0-alpha 
+asdf.dev is powered by VuePress 1.x
 
 ### Branches
 
