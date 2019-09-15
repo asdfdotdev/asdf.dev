@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "./node_modules/.bin/vuepress dev site",
     "build": "./node_modules/.bin/vuepress build site",
-    "release": "./node_modules/.bin/vuepress build site && cp -R _build/ _release/",
+    "release": "rm ./_release/assets/css/*; rm ./_release/assets/js/*; ./node_modules/.bin/vuepress build site && cp -R _build/ _release/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,8 +22,8 @@
   "dependencies": {
     "@flickerbox/fabric": "^4.0.25",
     "node-sass": "^4.12.0",
-    "sass-loader": "^7.1.0",
+    "sass-loader": "^7.3.1",
     "vue-clickaway": "^2.2.2",
-    "vuepress": "^1.0.2"
+    "vuepress": "^1.1.0"
   }
 }

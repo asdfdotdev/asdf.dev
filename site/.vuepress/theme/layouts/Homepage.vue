@@ -37,6 +37,8 @@
 
     <Footer/>
 
+    <script type="application/ld+json" v-html="asdf__json_ld_schema()" />
+
   </article>
 
 </template>
@@ -47,11 +49,16 @@
 
 <script>
 
-  import Hero from "../components/hero";
+  import Hero from "../components/hero"
+  import JsonLd from "../mixins/JsonLd"
 
   export default {
 
     name: 'Homepage',
+
+    mixins: [
+        JsonLd,
+    ],
 
     components: {
       Hero,
@@ -59,7 +66,7 @@
 
     data() {
       return {
-        foundIt: false
+        foundIt: false,
       }
     },
 

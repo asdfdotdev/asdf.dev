@@ -36,6 +36,8 @@
 
     <Footer/>
 
+    <script type="application/ld+json" v-html="asdf__json_ld_schema()" />
+
   </article>
 
 </template>
@@ -51,10 +53,15 @@
   import FeaturedImage from "../components/FeaturedImage"
   import FiftyFifty from "../components/FiftyFifty"
   import TiledGrid from "../components/TiledGrid"
+  import JsonLd from "../mixins/JsonLd"
 
   export default {
 
     name: 'Layout',
+
+    mixins: [
+        JsonLd,
+    ],
 
     components: {
       Hero,

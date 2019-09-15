@@ -14,7 +14,7 @@
 
     methods: {
 
-      asdf__formattedText: function(text) {
+      asdf__formattedText(text) {
         return text.match(/[^\r\n]+/g)
       },
 

@@ -1,6 +1,7 @@
 .Hero {
   height: 70vh;
-  min-height: _(60x);
+  min-height: _(50x);
+  max-height: _(70x);
   position: relative;
 
   &::before,
