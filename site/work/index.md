@@ -53,6 +53,9 @@ fifty_fifty:
 tiled_grid:
   title: The Nine to Five
   tiles:
+    - name: GoodHire
+      description: WordPress, Pantheon, HubSpot
+      image: /assets/images/logos/goodhire.png
     - name: Airship
       description: WordPress, Pantheon, Marketo, ExpressionEngine Conversion
       image: /assets/images/logos/airship.png

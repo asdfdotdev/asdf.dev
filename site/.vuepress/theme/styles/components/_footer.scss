@@ -10,7 +10,7 @@ footer {
 @include media('<small') {
 
   footer {
-    @include padding(5x 6x);
+    @include padding(3x 6x);
   }
 
 }

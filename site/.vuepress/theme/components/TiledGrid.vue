@@ -1,6 +1,6 @@
 <template>
 
-  <section class="['TiledGrid']">
+  <section class="TiledGrid">
 
     <div class="Wrap">
 

@@ -1,5 +1,9 @@
 .TiledGrid {
 
+  .Grid {
+    justify-content: center;
+  }
+
   &-tile {
     display: flex;
     flex-direction: column;
