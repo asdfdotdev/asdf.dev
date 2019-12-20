@@ -2,6 +2,8 @@
 
   <article class="four-oh-four">
 
+    <noscript v-html="asdf__matomo_noscript()"/>
+
     <section>
 
       <div class="greeting">
@@ -377,9 +379,16 @@
 </style>
 
 <script>
+
+  import Matomo from "../mixins/Matomo"
+
   export default {
 
     name: 'NotFound',
+
+    mixins: [
+      Matomo,
+    ],
 
     data() {
 

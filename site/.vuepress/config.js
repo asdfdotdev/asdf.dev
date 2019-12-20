@@ -27,6 +27,18 @@ module.exports = {
   },
 
   head: [
+    ['script', {}, `
+    var _paq = window._paq || [];
+    _paq.push(['trackPageView']);
+    _paq.push(['enableLinkTracking']);
+    (function() {
+      var u="https://asdfdev.matomo.cloud/";
+      _paq.push(['setTrackerUrl', u+'matomo.php']);
+      _paq.push(['setSiteId', '1']);
+      var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+      g.type='text/javascript'; g.async=true; g.defer=true; g.src='//cdn.matomo.cloud/asdfdev.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g,s);
+    })();
+    `],
     ['link', { rel: 'apple-touch-icon-precomposed', sizes: '57x57', href: '/assets/images/favicons/apple-touch-icon-57x57.png' }],
     ['link', { rel: 'apple-touch-icon-precomposed', sizes: '114x114', href: '/assets/images/favicons/apple-touch-icon-114x114.png' }],
     ['link', { rel: 'apple-touch-icon-precomposed', sizes: '72x72', href: '/assets/images/favicons/apple-touch-icon-72x72.png' }],
@@ -56,10 +68,13 @@ module.exports = {
     ['meta', { name: 'twitter:description', content: 'A website.' }],
     ['meta', { name: 'twitter:url', content: 'https://asdf.dev' }],
     ['meta', { name: 'twitter:image', content: 'https://asdf.dev/assets/images/social/asdf-dot-dev.png' }],
-    ['link', { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.10.2/css/all.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.12.0/css/all.css' }],
   ],
 
   themeConfig: {
+    matomo: {
+      noscript: 'https://asdfdev.matomo.cloud/matomo.php?idsite=1&amp;rec=1'
+    },
     schema: {
       name: "Chris Carlevato",
       url: "https://asdf.dev",
