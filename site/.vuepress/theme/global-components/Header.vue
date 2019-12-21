@@ -6,9 +6,9 @@
 
       <nav>
 
-        <a href="/about">about</a>
+        <a href="/about" data-event="nav" id="about">about</a>
 
-        <a href="/" class="Logo">
+        <a href="/" class="Logo" data-event="nav" id="home">
           <svg xmlns="http://www.w3.org/2000/svg" width="594" height="205" viewBox="0 0 594 205">
             <g fill="none" transform="translate(.5 .25)">
               <path fill="#000" d="M0,93.25 C0,68.5 20.75,50.5 50,50.5 C66.5,50.5 79,56.75 84.25,62.25 L84.25,46.25 C84.25,28 72,17.5 52.75,17.5 C36.75,17.5 23.75,23.25 14.5,28.75 L6.5,14.25 C15.25,8.75 32.5,0 54.5,0 C90,0 104,19.75 104,47.5 L104,133.25 L87,133.25 L84.75,122.25 C78,130 67,136.5 49.5,136.5 C21,136.5 0,118.5 0,93.25 Z M20,93 C20,108 32.75,120 52.75,120 C71.75,120 85,108.75 85,93 C85,76.75 72,66.25 52.5,66.25 C32.75,66.25 20,77.75 20,93 Z" transform="translate(0 47.5)"/>
@@ -20,7 +20,7 @@
           </svg>
         </a>
 
-        <a href="/work">work</a>
+        <a href="/work" data-event="nav" id="work">work</a>
 
       </nav>
 

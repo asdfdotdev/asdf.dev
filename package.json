@@ -21,6 +21,7 @@
   "homepage": "https://github.com/asdfdotdev/dev.asdf#readme",
   "dependencies": {
     "@flickerbox/fabric": "^4.0.25",
+    "@flickerbox/tracker": "^2.0.2",
     "node-sass": "^4.13.0",
     "sass-loader": "^7.3.1",
     "vue-clickaway": "^2.2.2",

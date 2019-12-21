@@ -11,7 +11,7 @@
         <nav
           @mouseover="disableHelper">
 
-          <a href="/about">about</a>
+          <a href="/about" data-event="homepage" id="about">about</a>
 
           <div class="Logo">
 
@@ -29,7 +29,7 @@
 
           </div>
 
-          <a href="/work">work</a>
+          <a href="/work" data-event="homepage" id="work">work</a>
 
         </nav>
 

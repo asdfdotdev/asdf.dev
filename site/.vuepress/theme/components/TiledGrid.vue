@@ -13,7 +13,7 @@
           v-for="(tile, index) in tiles"
           class="TiledGrid-tile is-4 is-12--small">
 
-          <div class="TiledGrid-logo">
+          <div class="TiledGrid-logo" :data-event="tile.name">
             <img :src="tile.image">
           </div>
 
