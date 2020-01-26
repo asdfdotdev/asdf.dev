@@ -2,8 +2,6 @@
 
   <article :class="[pathToClass]">
 
-    <noscript v-html="asdf__matomo_noscript()"/>
-
     <Header/>
 
     <Hero
@@ -56,7 +54,6 @@
   import FiftyFifty from "../components/FiftyFifty"
   import TiledGrid from "../components/TiledGrid"
   import JsonLd from "../mixins/JsonLd"
-  import Matomo from "../mixins/Matomo"
 
   export default {
 
@@ -64,7 +61,6 @@
 
     mixins: [
       JsonLd,
-      Matomo,
     ],
 
     components: {

@@ -2,8 +2,6 @@
 
   <article ref="homepage" class="home">
 
-    <noscript v-html="asdf__matomo_noscript()"/>
-
     <header>
 
       <div class="Wrap">
@@ -53,7 +51,6 @@
 
   import Hero from "../components/hero"
   import JsonLd from "../mixins/JsonLd"
-  import Matomo from "../mixins/Matomo"
 
   export default {
 
@@ -61,7 +58,6 @@
 
     mixins: [
       JsonLd,
-      Matomo,
     ],
 
     components: {
