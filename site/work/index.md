@@ -53,24 +53,27 @@ fifty_fifty:
 tiled_grid:
   title: The Nine to Five
   tiles:
-    - name: GoodHire
-      description: WordPress, Pantheon, HubSpot
-      image: /assets/images/logos/goodhire.png
+    - name: Rezilion
+      description: WordPress, Pantheon, Google Analytics, Monday
+      image: /assets/images/logos/rezilion.png
     - name: Airship
-      description: WordPress, Pantheon, Marketo, ExpressionEngine Conversion
+      description: WordPress, Pantheon, Marketo, Lever, ExpressionEngine Conversion
       image: /assets/images/logos/airship.png
     - name: Stitch Fix
       description: WordPress, Pantheon, Google Analytics
       image: /assets/images/logos/stitchfix.png
-    - name: Okta
-      description: Drupal, Aquia, AWS, Salesforce, Discourse, VuePress
-      image: /assets/images/logos/okta.png
     - name: Blue Hexagon
-      description: WordPress, Pantheon
+      description: WordPress, Pantheon, Marketo
       image: /assets/images/logos/bluehexagon.png
     - name: Lakeside Software
       description: Drupal, Pantheon, Act-On, Google Analytics
       image: /assets/images/logos/lakesidesoftware.png
+    - name: GoodHire
+      description: WordPress, Pantheon, HubSpot
+      image: /assets/images/logos/goodhire.png
+    - name: Dgraph
+      description: Pugjs
+      image: /assets/images/logos/dgraph.png
     - name: Agari Data
       description: WordPress, WP Engine, AWS, Postgres, Marketo, Google Analytics
       image: /assets/images/logos/agari.png
@@ -80,6 +83,9 @@ tiled_grid:
     - name: Helpshift
       description: WordPress, Pantheon, HubSpot
       image: /assets/images/logos/helpshift.png
+    - name: Okta
+      description: Drupal, Aquia, AWS, Salesforce, Discourse, VuePress
+      image: /assets/images/logos/okta.png
     - name: SamsungNext
       description: WordPress, Pantheon, AWS Migration
       image: /assets/images/logos/samsungnext.png
