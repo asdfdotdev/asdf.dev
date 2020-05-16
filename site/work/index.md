@@ -53,15 +53,15 @@ fifty_fifty:
 tiled_grid:
   title: The Nine to Five
   tiles:
-    - name: Rezilion
-      description: WordPress, Pantheon, Google Analytics, Monday
-      image: /assets/images/logos/rezilion.png
     - name: Airship
       description: WordPress, Pantheon, Marketo, Lever, ExpressionEngine Conversion
       image: /assets/images/logos/airship.png
-    - name: Stitch Fix
-      description: WordPress, Pantheon, Google Analytics
-      image: /assets/images/logos/stitchfix.png
+    - name: Okta
+      description: Drupal, D8, Pantheon, AWS, Salesforce, Discourse, VuePress
+      image: /assets/images/logos/okta.png
+    - name: Rezilion
+      description: WordPress, Pantheon, Google Analytics, Monday
+      image: /assets/images/logos/rezilion.png
     - name: Blue Hexagon
       description: WordPress, Pantheon, Marketo
       image: /assets/images/logos/bluehexagon.png
@@ -83,14 +83,14 @@ tiled_grid:
     - name: Helpshift
       description: WordPress, Pantheon, HubSpot
       image: /assets/images/logos/helpshift.png
-    - name: Okta
-      description: Drupal, Aquia, AWS, Salesforce, Discourse, VuePress
-      image: /assets/images/logos/okta.png
+    - name: Stitch Fix
+      description: WordPress, Pantheon, Google Analytics
+      image: /assets/images/logos/stitchfix.png
     - name: SamsungNext
-      description: WordPress, Pantheon, AWS Migration
+      description: WordPress, Pantheon, VPS Migration
       image: /assets/images/logos/samsungnext.png
     - name: Kindred Partners
-      description: WordPress, Pantheon, Mailchimp, VPS Migration
+      description: WordPress, Pantheon, VPS Migration, Mailchimp
       image: /assets/images/logos/kindredpartners.png
     - name: TSheets
       description: WordPress, Salesforce, Optimizely, HubSpot, TSheets

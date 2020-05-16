@@ -68,13 +68,13 @@ module.exports = {
     ['meta', { name: 'twitter:description', content: 'A website.' }],
     ['meta', { name: 'twitter:url', content: 'https://asdf.dev' }],
     ['meta', { name: 'twitter:image', content: 'https://asdf.dev/assets/images/social/asdf-dot-dev.png' }],
-    ['link', { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.12.0/css/all.css' }],
+    ['link', { rel: 'stylesheet', href: 'https://use.fontawesome.com/releases/v5.13.0/css/all.css' }],
   ],
 
   themeConfig: {
-    matomo: {
-      noscript: 'https://asdfdev.matomo.cloud/matomo.php?idsite=1&amp;rec=1'
-    },
+    // matomo: {
+    //   noscript: 'https://asdfdev.matomo.cloud/matomo.php?idsite=1&amp;rec=1'
+    // },
     schema: {
       name: "Chris Carlevato",
       url: "https://asdf.dev",
@@ -84,17 +84,15 @@ module.exports = {
       postalCode: "97201",
       addressCountry: "United States of America",
       jobTitle: "Senior Developer",
-      affiliation: "Flickerbox, Inc.",
+      affiliation: "Flickerbox, Inc",
       sameAs: [
         "https://www.linkedin.com/in/chriscarlevato",
         "https://github.com/chrislarrycarl",
         "https://mastodon.social/@asdf_",
-        "https://keybase.io/chrislarrycarl",
         "https://twitter.com/chrislarrycarl",
         "https://www.facebook.com/chrislarrycarl",
         "https://profiles.wordpress.org/chrislarrycarl",
         "https://www.drupal.org/u/chrislarrycarl",
-        "https://setiathome.berkeley.edu/show_user.php?userid=166402",
       ]
     }
   }
