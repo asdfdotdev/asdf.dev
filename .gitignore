@@ -1,5 +1,6 @@
 **/.DS_Store
 .idea
+.gradle/
 _build/
 _release/
 node_modules/

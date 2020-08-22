@@ -1,14 +1,14 @@
-asdf.dev - A website.  
+asdf.dev - A website.
 
 ### Compatibility
 
-[![VuePress Compatibility](https://img.shields.io/badge/VuePress-v1.x-success.svg)](https://v1.vuepress.vuejs.org)
+[![VuePress Compatibility](https://img.shields.io/badge/VuePress-v1.x-success.svg)](https://vuepress.vuejs.org/)
 
 asdf.dev is powered by VuePress 1.x
 
 ### Branches
 
-**master** - The latest build files used to generate the site.
+**main** - The latest build files used to generate the site.
 
 ### Repository Contents
 
@@ -29,7 +29,7 @@ $ npm run COMMAND
 - **dev** Runs `vuepress dev site` for development and monitors files for changes.
 - **build** Runs `vuepress build site` to build the site and output files to `_build` directory.
 - **release** Runs `vuepress build site` to build the site and copy output files from `_build` to `_release`.
-    
+
 
 ## Feedback
 
