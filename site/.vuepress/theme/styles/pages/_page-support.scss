@@ -1,36 +1,27 @@
-article.about {
+article.support {
 
   .Hero {
     &:after {
-      background-color: get-color(green);
+      background-color: get-color(purple);
     }
 
     &:before {
       background-color: get-color(gold);
+      width: 65%;
     }
 
     .Hero-title {
       @include color(white);
-    }
-  }
 
-  .OverUnder {
-
-    &-divide {
-      background-color: get-color(gold);
-
-      div {
-        background-color: get-color(green);
-
-        &:before {
-          background-color: get-color(green);
-        }
-
+      span {
+        transform: rotate(-90deg);
+        display: inline-block;
+        margin-left: 4px;
+        margin-right: 4px;
       }
-
     }
-
   }
+
 
   .FiftyFifty {
 
@@ -52,6 +43,7 @@ article.about {
       background-color: get-color(purple);
     }
 
+    button,
     a {
       @include transition(color normal ease);
       color: inherit;
@@ -66,6 +58,11 @@ article.about {
         @include color(light-gray);
       }
 
+    }
+
+    button {
+      border: 0;
+      background: transparent;
     }
 
   }

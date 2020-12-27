@@ -32,13 +32,15 @@ fifty_fifty:
   left:
     title: Let’s
     contents: |
-      <a rel="me" href="https://github.com/chrislarrycarl" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-github"></i></a>
-      <a rel="me" href="https://www.linkedin.com/in/chriscarlevato" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-linkedin"></i></a>
+      <a rel="me" href="https://github.com/chrislarrycarl" target="_blank" rel="noopener noreferrer"><i class="fa-4x fab fa-github"></i></a>
+      <a href="https://profiles.wordpress.org/chrislarrycarl/" target="_blank" rel="noopener noreferrer"><i class="fa-4x fab fa-wordpress"></i></a>
+      <a href="https://www.drupal.org/u/chrislarrycarl" target="_blank" rel="noopener noreferrer"><i class="fa-4x fab fa-drupal"></i></a>
   right:
     title: Connect
     contents: |
-      <a rel="me" href="https://mastodon.social/@asdf_" target="_blank" rel="noopener noreferrer"><i class="fa-6x fab fa-mastodon"></i></a>
-      <a rel="me" href="/asdfdotdev.asc" target="_blank" rel="noopener noreferrer"><i class="fa-6x fas fa-key"></i></i></a>
+      <a rel="me" href="https://www.linkedin.com/in/chriscarlevato" target="_blank" rel="noopener noreferrer"><i class="fa-4x fab fa-linkedin"></i></a>
+      <a rel="me" href="https://mastodon.social/@asdf_" target="_blank" rel="noopener noreferrer"><i class="fa-4x fab fa-mastodon"></i></a>
+      <a rel="me" href="/asdfdotdev.asc" target="_blank" rel="noopener noreferrer"><i class="fa-4x fas fa-key"></i></i></a>
 
 featured_image:
   title: Such A Character
